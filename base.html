@@ -1,0 +1,21 @@
+<<html>
+    <head>
+        <title>{%block title%} {%endblock%}</title>
+    </head>
+    <body>
+        <h1>Welcome to My Web Page</h1>
+        <p>This is a sample paragraph.
+            {{content}}
+        </p>
+        <!-- How to Use Python -->
+        {%for x in range(10)%}
+            {%if x%2 == 0%}
+                <p>{{x}}</p>
+            {%endif%}
+        {%endfor%}
+        <!-- Inheritance Of other Templates -->
+        {%block body%}
+        {%endblock%}
+
+    </body>
+</html>
